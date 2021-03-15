@@ -118,7 +118,6 @@ const Post = ({PostData, Liked, SubmitComment, }) => {
                         return <Comment 
                                     commentData={item}
                                     deleteComment={(id) => {
-                                        console.log(id - 1)
                                         comments.splice(id - 1, 1)
                                         setCommentCount(comments.length)
 
@@ -127,11 +126,10 @@ const Post = ({PostData, Liked, SubmitComment, }) => {
                                         console.log('edit')
                                     }}
                                     userName={PostData.userName}
-                                    userTitle={PostData.title}
+                                    userTitle={PostData.userTitle}
 
                             />
                     }}
-
                 /> 
                 : null
                 }       

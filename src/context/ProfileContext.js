@@ -6,8 +6,8 @@ const postReducer = (state, action) => {
 }
 
 const newPost = (dispatch, state) => (content, date) => {
+    {/*Future Code */}
     
-    state.push({content: content, date: date, userName: 'Bryson London', id: state.length + 1, title: 'Professional-Student' });
 }
 
 export const {Context, Provider} = createDataContext(
@@ -15,4 +15,3 @@ export const {Context, Provider} = createDataContext(
     {newPost},
     []
 )
-//{...post, comments: [...comments, {content: action.payload.comment, likes: 0, date: action.payload.date}]}
